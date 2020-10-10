@@ -91,7 +91,7 @@ and saved as a csv file,
 
 TaxData.csv
 
-which is current as of October 7, 2020. Updating this file takes less than
+which is current as of October 9, 2020. Updating this file takes less than
 one minute and is certainly quicker than manually searching for sales tax
 information!
 
