@@ -12,8 +12,9 @@ New York. Unfortunately, I was not able to find a free source of
 consolidated US sales tax information for our business records. Therefore, 
 I decided to try and learn how to use BeautifulSoup (a powerful Python 
 tool that allows a user to parse HTML code for valuable information) to 
-collect this data from websites!
+collect this data from websites! The result is
 
+Tax_Getter.ipynb!
 
 ------------------------------------------------------------------------
 Step 1: Finding the necessary data
@@ -24,9 +25,15 @@ traverse their website. This can be for a number of reasons to do with
 security and privacy. A website's permissions for web-scraping can be
 found by going to the website's /robots.txt page
 
-(ex. rwandadeluxecoffee.com/robots.txt).
+(ex. rwandadeluxecoffee.com/robots.txt), 
 
-Therefore, I searched for and eventually came across two useful websites:
+or by using my URL checking program,
+
+Quickcheck.ipynb
+
+to see what data you can get from a URL.
+
+I eventually came across two useful websites:
 
 http://www.sale-tax.com/ - US Sales tax information for each state and,
 
