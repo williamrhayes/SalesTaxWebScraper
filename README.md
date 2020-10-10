@@ -108,3 +108,24 @@ quality of data in this CSV. For one, more information could be collected
 about where the combined taxes are distributed between states, counties, etc.
 within a given zip code. For now, this provides us with the basic total 
 amount of sales tax that needs to be collected in a given location!
+
+------------------------------------------------------------------------
+Step 4: FIX A BIG ISSUE!
+
+As I was about to upload the CSV file I wondered why it was over 100,000
+rows. I looked up how many zipcodes existed in the United States and 
+learned that the number was around 40,000. Therefore, I knew that I had
+made a mistake somewhere. 
+
+When I was merging the dataframes, I was only merging by city. This meant
+that places like Hollis, NY and Hollis, OK were assigned both their own
+zipcode AND each other's zipcode!
+
+To fix this issue, I added the state abbreviation to the zip_codes dictionary
+and merged the dataframes first by state THEN by city. That way, each state's
+city got its own zipcode properly assigned.
+
+This merge caused a much more reasonable 39,691 rows of data. With 40,589 
+zip codes in the original dictionary, I did lose 898 zipcodes. This can be
+looked into later if the situation calls for it, but even with the loss of
+these 898 zipcodes that still leaves 97.8% of the zipcodes accounted for!
